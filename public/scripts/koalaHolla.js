@@ -11,6 +11,7 @@ $( document ).ready( function(){
     // get user input and put in an object
     // NOT WORKING YET :(
     // using a test object
+    // ====================================================
     var objectToSend = {
       name: 'testName',
       age: 'testName',
@@ -31,10 +32,11 @@ var getKoalas = function(){
     type: 'GET',
     success: function( data ){
       console.log( 'got some koalas: ', data );
+      //============================================
     } // end success
   }); //end ajax
   // display on DOM with buttons that allow edit of each
-} // end getKoalas
+}; // end getKoalas
 
 var saveKoala = function( newKoala ){
   console.log( 'in saveKoala', newKoala );
@@ -47,4 +49,4 @@ var saveKoala = function( newKoala ){
       console.log( 'got some koalas: ', data );
     } // end success
   }); //end ajax
-}
+};
